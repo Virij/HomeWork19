@@ -11,7 +11,8 @@ public:
 class Dog : Animal
 {
 	
-	void Voice() override {
+	void Voice() override 
+	{
 		std::cout << "Woof!" << std::endl;
 	}
 
@@ -19,14 +20,16 @@ class Dog : Animal
 
 class Cat : Animal
 {
-	void Voice() override {
+	void Voice() override 
+	{
 		std::cout << "Meow!" << std::endl;
 	}
 
 };
 class Mouse : Animal
 {
-	void Voice() override {
+	void Voice() override 
+	{
 		std::cout << "Peee!" << std::endl;
 	}
 
@@ -41,7 +44,8 @@ int main()
 	animals[0] = (Animal*) new Dog;
 	animals[1] = (Animal*) new Cat;
 	animals[2] = (Animal*) new Mouse;
-	for (Animal *a : animals) {
+	for (Animal *a : animals) 
+	{
 		a->Voice();
 	}
 }
